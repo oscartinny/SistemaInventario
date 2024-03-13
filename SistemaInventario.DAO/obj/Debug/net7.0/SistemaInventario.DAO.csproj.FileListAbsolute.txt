@@ -1,0 +1,17 @@
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\bin\Debug\net7.0\SistemaInventario.DAO.deps.json
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\bin\Debug\net7.0\SistemaInventario.DAO.dll
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\bin\Debug\net7.0\SistemaInventario.DAO.pdb
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\bin\Debug\net7.0\SistemaInventario.Modelos.dll
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\bin\Debug\net7.0\SistemaInventario.Utilidades.dll
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\bin\Debug\net7.0\SistemaInventario.Modelos.pdb
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\bin\Debug\net7.0\SistemaInventario.Utilidades.pdb
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\obj\Debug\net7.0\SistemaInventario.DAO.csproj.AssemblyReference.cache
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\obj\Debug\net7.0\SistemaInventario.DAO.GeneratedMSBuildEditorConfig.editorconfig
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\obj\Debug\net7.0\SistemaInventario.DAO.AssemblyInfoInputs.cache
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\obj\Debug\net7.0\SistemaInventario.DAO.AssemblyInfo.cs
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\obj\Debug\net7.0\SistemaInventario.DAO.csproj.CoreCompileInputs.cache
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\obj\Debug\net7.0\SistemaInventario.DAO.csproj.CopyComplete
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\obj\Debug\net7.0\SistemaInventario.DAO.dll
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\obj\Debug\net7.0\refint\SistemaInventario.DAO.dll
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\obj\Debug\net7.0\SistemaInventario.DAO.pdb
+E:\UDEMY\SistemaInventario\SistemaInventario.DAO\obj\Debug\net7.0\ref\SistemaInventario.DAO.dll

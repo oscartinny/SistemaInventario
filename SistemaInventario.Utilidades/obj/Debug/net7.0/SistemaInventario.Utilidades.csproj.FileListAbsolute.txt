@@ -1,0 +1,11 @@
+E:\UDEMY\SistemaInventario\SistemaInventario.Utilidades\bin\Debug\net7.0\SistemaInventario.Utilidades.deps.json
+E:\UDEMY\SistemaInventario\SistemaInventario.Utilidades\bin\Debug\net7.0\SistemaInventario.Utilidades.dll
+E:\UDEMY\SistemaInventario\SistemaInventario.Utilidades\bin\Debug\net7.0\SistemaInventario.Utilidades.pdb
+E:\UDEMY\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net7.0\SistemaInventario.Utilidades.GeneratedMSBuildEditorConfig.editorconfig
+E:\UDEMY\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net7.0\SistemaInventario.Utilidades.AssemblyInfoInputs.cache
+E:\UDEMY\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net7.0\SistemaInventario.Utilidades.AssemblyInfo.cs
+E:\UDEMY\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net7.0\SistemaInventario.Utilidades.csproj.CoreCompileInputs.cache
+E:\UDEMY\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net7.0\SistemaInventario.Utilidades.dll
+E:\UDEMY\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net7.0\refint\SistemaInventario.Utilidades.dll
+E:\UDEMY\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net7.0\SistemaInventario.Utilidades.pdb
+E:\UDEMY\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net7.0\ref\SistemaInventario.Utilidades.dll

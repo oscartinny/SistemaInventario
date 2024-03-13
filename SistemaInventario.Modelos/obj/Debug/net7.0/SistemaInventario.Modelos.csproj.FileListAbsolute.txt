@@ -1,0 +1,15 @@
+E:\UDEMY\SistemaInventario\SistemaInventario.Modelos\bin\Debug\net7.0\SistemaInventario.Modelos.deps.json
+E:\UDEMY\SistemaInventario\SistemaInventario.Modelos\bin\Debug\net7.0\SistemaInventario.Modelos.dll
+E:\UDEMY\SistemaInventario\SistemaInventario.Modelos\bin\Debug\net7.0\SistemaInventario.Modelos.pdb
+E:\UDEMY\SistemaInventario\SistemaInventario.Modelos\bin\Debug\net7.0\SistemaInventario.Utilidades.dll
+E:\UDEMY\SistemaInventario\SistemaInventario.Modelos\bin\Debug\net7.0\SistemaInventario.Utilidades.pdb
+E:\UDEMY\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net7.0\SistemaInventario.Modelos.csproj.AssemblyReference.cache
+E:\UDEMY\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net7.0\SistemaInventario.Modelos.GeneratedMSBuildEditorConfig.editorconfig
+E:\UDEMY\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net7.0\SistemaInventario.Modelos.AssemblyInfoInputs.cache
+E:\UDEMY\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net7.0\SistemaInventario.Modelos.AssemblyInfo.cs
+E:\UDEMY\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net7.0\SistemaInventario.Modelos.csproj.CoreCompileInputs.cache
+E:\UDEMY\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net7.0\SistemaInventario.Modelos.csproj.CopyComplete
+E:\UDEMY\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net7.0\SistemaInventario.Modelos.dll
+E:\UDEMY\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net7.0\refint\SistemaInventario.Modelos.dll
+E:\UDEMY\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net7.0\SistemaInventario.Modelos.pdb
+E:\UDEMY\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net7.0\ref\SistemaInventario.Modelos.dll
