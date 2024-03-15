@@ -18,6 +18,7 @@ namespace SistemaInventario.DAO.Repositorio
         private readonly ApplicationDbContext _bd;
 
         public IBodegaRepositorio Bodega { get; private set; }
+        public ICategoriaRepositorio Categoria { get; private set; }  
 
         //Se manda el DBContext para que todos los modelos puedan utilizar los diferentes repositorios 
         public UnidadTrabajo(ApplicationDbContext bd)
@@ -25,6 +26,7 @@ namespace SistemaInventario.DAO.Repositorio
             _bd = bd;
             //Implementamos la interface Bodega, con la clase BodegaRepositorio que ya contiene los metodos definidos
             Bodega = new BodegaRepositorio(_bd);
+            Categoria = new CategoriaRepositorio(_bd);
         }
 
         public void Dispose()

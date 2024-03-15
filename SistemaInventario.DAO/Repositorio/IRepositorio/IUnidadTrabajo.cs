@@ -9,6 +9,8 @@ namespace SistemaInventario.DAO.Repositorio.IRepositorio
     public interface IUnidadTrabajo : IDisposable //--> Se deshace de los recursos que ya no se utilizan
     {
         IBodegaRepositorio Bodega { get; }
+
+        ICategoriaRepositorio Categoria { get; }
         Task Guardar();
     }
 }

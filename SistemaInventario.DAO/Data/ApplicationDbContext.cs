@@ -22,6 +22,7 @@ namespace SistemaInventario.DAO.Data
         //update-database - Comando para ejecutar los archivos de migración que se encuentren pendientes de ejecutar
 
         public DbSet<Bodega> Bodegas { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
 
 
         //Metodo sobre escrito para que la aplicación tome las configuraciones de los modelos desde las clases que hereden o implementen IEntityTypeConfiguration
