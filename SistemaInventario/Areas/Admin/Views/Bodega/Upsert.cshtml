@@ -1,0 +1,118 @@
+﻿@model SistemaInventario.Modelos.Bodega
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var titulo = "Crear bodega";
+}
+
+<form method="post">
+
+    <div style="padding-left: 15%; padding-right:15%; padding-bottom:.4rem;">
+        <div class="row boder-0">
+            <!--Con este tag todas las validaciones del modelo aplicaran y se mostrarán en este div -->
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div> 
+
+        </div>
+
+        <!--Revisamos si el modelo recibido tiene un id diferente a 0 para determinar que
+                Titulo tendra la vista.
+            -->
+        @if (Model.Id != 0)
+        {
+            //Para poder ocupar codigo c# deberemos de utilizar @
+            titulo = "Editar bodega";
+            <input  type="hidden" asp-for="Id" id="id"/>
+        }
+        <div class="col-12 border-bottom p-0">
+            <h2 class="text-primary">@titulo</h2>
+        </div>
+
+        <div class="row mb-2 mt-2">
+            <div class=" form-group col-md-6">
+                <label>Nombre</label>
+                <input type="text" id="nombre" asp-for="Nombre" class="form-control" placeholder="Nombre de la bodega" />
+                <span asp-validation-for="Nombre" class="text-danger" ></span>
+            </div>
+        </div>
+        <div class="row mb-2 mt-2">
+            <div class=" form-group col-md-6">
+                <label>Descripción</label>
+                <input type="text" asp-for="Descripcion" class="form-control" placeholder="Descripción de la bodega" />
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+                <!--asp-validation-for ayuda a poder mostrar los mensajes de validacion que ya hemos declarado en el modelo-->
+            </div>
+        </div>
+        <div class="row mb-2 mt-2">
+            <div class=" form-group col-md-6">
+                <label>Descripción</label>
+                <select asp-for="Estado" class="form-select">
+                    <option value=true>Activo</option>
+                    <option value=false>Inactivo</option>
+                </select>
+                <span asp-validation-for="Estado" class="text-danger"></span>
+                <!--asp-validation-for ayuda a poder mostrar los mensajes de validacion que ya hemos declarado en el modelo-->
+            </div>
+        </div>
+        
+        <br/>
+        <div>
+            <!--Revisamos si el modelo recibido tiene un id diferente a 0 para determinar que 
+                vista parcial de botones mostraremos (intertar o editar)
+            -->
+            @if (Model.Id != 0)
+            {
+                <!--Cuando sea la opción de editar mandaremos el id a la vista parcial 
+                    para que sea ocupado por el metodo editar-->
+                <partial name="_BotonesActualizarRegresar" model="Model.Id" />
+            }
+            else
+            {
+                <partial name="_BotonesCrearYRegresar" />
+            }
+
+        </div>
+       
+
+    </div>
+
+</form>
+
+<!--En esta seccion agregamos los scripts que pertenecen a la vista-->
+@section Scripts{
+
+    <!--Validaction scrpit muestra los errores que tenga algunas de las propiedades a nivel de cliente y no servidor
+        Se deberá de incluir _ValidationScriptsPartial para que se muestren los errores 
+        declarados en el formulario-->
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        /** Agregamos el evento change al input del nombre para llamar al metodo validarNombre*/
+        document.getElementById("nombre").addEventListener('change', function () {
+            validarNombre();
+        });
+
+
+        function validarNombre() {
+            var url = "@Url.Content("~/")" + "Admin/Bodega/ValidarNombre";
+
+            var id = '#id';
+            var nombre = '#nombre';
+            //Obtenemos el JSON de la llamada ValidarNombre
+            //Para enviar los datos al metodo los parametros deben llamarse igual que en el controller
+            $.getJSON(url, { id: $(id).val(), nombre: $(nombre).val() }, function (data) {
+                //Recorremos los valores retornados del metodo
+                $.each(data, function (key, value){
+                    //En este caso el metodo solo retorna un bool
+                    if (value) {
+                        //Obtenemos el elemento, se ejecuta la alerta y limpiamos el campo
+                        var nombre = document.getElementById("nombre");
+                        swal("Error", "El nombre de la bodega ya existe", "error");;
+                        nombre.value = "";
+                    }
+                });
+            });
+        }
+    </script>
+
+
+}

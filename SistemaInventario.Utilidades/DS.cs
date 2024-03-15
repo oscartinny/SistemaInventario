@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace SistemaInventario.Utilidades
 {
-    public static class DS
+    public static class DS //DEFINICIONES ESTATICAS
     {
+        public const string Exitosa = "Exitosa";
+        public const string Error = "Error";
     }
 }
