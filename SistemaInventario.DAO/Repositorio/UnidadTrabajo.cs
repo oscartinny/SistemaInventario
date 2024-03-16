@@ -21,6 +21,7 @@ namespace SistemaInventario.DAO.Repositorio
         public ICategoriaRepositorio Categoria { get; private set; }  
         public IMarcaRepositorio Marca { get; private set; }
         public IProductoRepositorio Producto { get; private set; }
+        public IUsuarioRepositorio Usuario { get; private set; }
 
         //Se manda el DBContext para que todos los modelos puedan utilizar los diferentes repositorios 
         public UnidadTrabajo(ApplicationDbContext bd)
@@ -31,6 +32,7 @@ namespace SistemaInventario.DAO.Repositorio
             Categoria = new CategoriaRepositorio(_bd);
             Marca = new MarcaRepositorio(_bd);
             Producto = new ProductoRepositorio(_bd);
+            Usuario = new UsuarioRepositorio(_bd);
         }
 
         public void Dispose()

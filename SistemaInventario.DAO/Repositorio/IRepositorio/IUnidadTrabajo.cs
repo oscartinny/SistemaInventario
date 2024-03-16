@@ -16,6 +16,8 @@ namespace SistemaInventario.DAO.Repositorio.IRepositorio
 
         IProductoRepositorio Producto { get; }
 
+        IUsuarioRepositorio Usuario { get; }
+
         Task Guardar();
     }
 }
