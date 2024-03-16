@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sYyGBStup8TNlBiFsfgwGbL6W5zVu+CqzdOt4G0fzE4=",
+  "Hash": "9K8P3RAbLEBJfdC/s1un3xzSLcEOS829uovWVI+xtjg=",
   "Source": "SistemaInventario",
   "BasePath": "_content/SistemaInventario",
   "Mode": "Default",
@@ -1105,6 +1105,40 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\icono.ico",
+      "SourceId": "SistemaInventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\",
+      "BasePath": "_content/SistemaInventario",
+      "RelativePath": "imagenes/icono.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\icono.ico"
+    },
+    {
+      "Identity": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\icono.png",
+      "SourceId": "SistemaInventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\",
+      "BasePath": "_content/SistemaInventario",
+      "RelativePath": "imagenes/icono.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\icono.png"
+    },
+    {
       "Identity": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\40b8f864-2bcb-4a0b-9529-d9ca5dd282fe.JPG",
       "SourceId": "SistemaInventario",
       "SourceType": "Discovered",
@@ -1120,6 +1154,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagenes\\producto\\40b8f864-2bcb-4a0b-9529-d9ca5dd282fe.JPG"
+    },
+    {
+      "Identity": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\7efe7f0d-adcb-497e-b683-23a4d8d3daec.JPG",
+      "SourceId": "SistemaInventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\",
+      "BasePath": "_content/SistemaInventario",
+      "RelativePath": "imagenes/producto/7efe7f0d-adcb-497e-b683-23a4d8d3daec.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\producto\\7efe7f0d-adcb-497e-b683-23a4d8d3daec.JPG"
     },
     {
       "Identity": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\8e6b7397-b52a-4669-b2d7-eeef106d43cf.JPG",
