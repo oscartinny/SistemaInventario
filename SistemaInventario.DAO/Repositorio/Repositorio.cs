@@ -65,7 +65,7 @@ namespace SistemaInventario.DAO.Repositorio
             {
                 foreach (var incluirProp in incluirPropiedades.Split(new char[] { ','}, StringSplitOptions.RemoveEmptyEntries))
                 {
-                    query = query.Include(incluirProp); //INCLUDE INCLUYE LAS PROPIEDADES DE LA ENTIDAD CON LA QUE TRABAJA. EJEMPLO "CATEGORIA, MARCA" 
+                    query = query.Include(incluirProp); //INCLUDE INCLUYE LAS PROPIEDADES DE LA ENTIDAD CON LA QUE TRABAJA. EJEMPLO "CATEGORIA, MARCA" de un producto 
                 }
             }
             if (orderBy != null)

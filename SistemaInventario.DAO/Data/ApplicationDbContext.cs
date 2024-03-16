@@ -26,6 +26,8 @@ namespace SistemaInventario.DAO.Data
 
         public DbSet<Marca> Marcas { get; set; }
 
+        public DbSet<Producto> Productos { get; set; }
+
 
         //Metodo sobre escrito para que la aplicación tome las configuraciones de los modelos desde las clases que hereden o implementen IEntityTypeConfiguration
         //Ver SistemaInventario.DAO.Configuracion
