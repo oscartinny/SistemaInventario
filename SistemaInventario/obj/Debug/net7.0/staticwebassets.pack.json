@@ -21,8 +21,24 @@
       "PackagePath": "staticwebassets\\imagenes\\icono.png"
     },
     {
+      "Id": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\33d819a6-e001-451d-9ff2-8c6897393bfd.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\33d819a6-e001-451d-9ff2-8c6897393bfd.JPG"
+    },
+    {
       "Id": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\40b8f864-2bcb-4a0b-9529-d9ca5dd282fe.JPG",
       "PackagePath": "staticwebassets\\imagenes\\producto\\40b8f864-2bcb-4a0b-9529-d9ca5dd282fe.JPG"
+    },
+    {
+      "Id": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\41b6c61b-6d52-4096-84bb-0673593c73b2.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\41b6c61b-6d52-4096-84bb-0673593c73b2.JPG"
+    },
+    {
+      "Id": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\422d915f-1cc8-47b1-a17d-b35396b54545.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\422d915f-1cc8-47b1-a17d-b35396b54545.JPG"
+    },
+    {
+      "Id": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\4d2cec63-47ac-42e5-be8a-15853b3bf381.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\4d2cec63-47ac-42e5-be8a-15853b3bf381.JPG"
     },
     {
       "Id": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\7efe7f0d-adcb-497e-b683-23a4d8d3daec.JPG",
@@ -33,8 +49,16 @@
       "PackagePath": "staticwebassets\\imagenes\\producto\\8e6b7397-b52a-4669-b2d7-eeef106d43cf.JPG"
     },
     {
+      "Id": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\99999a7e-067b-40b7-8a2f-3bd1dad71a89.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\99999a7e-067b-40b7-8a2f-3bd1dad71a89.JPG"
+    },
+    {
       "Id": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\a10e5cfe-acaa-43da-adc1-9b0778de0797.JPG",
       "PackagePath": "staticwebassets\\imagenes\\producto\\a10e5cfe-acaa-43da-adc1-9b0778de0797.JPG"
+    },
+    {
+      "Id": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\e5149ed6-b87a-41cd-9ce0-c8eab6251772.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\e5149ed6-b87a-41cd-9ce0-c8eab6251772.JPG"
     },
     {
       "Id": "E:\\UDEMY\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\bodega.js",

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<SistemaInventario.Modelos.Producto>
+﻿@model SistemaInventario.Modelos.Especificaciones.PagedList<SistemaInventario.Modelos.Producto>
 @using SistemaInventario.Utilidades
 @{
     ViewData["Title"] = "Home Page";
@@ -15,17 +15,24 @@
 
 <section>
     <div class="container my-2">
-        <div class="con-lg-6 col-md-6  col-sm-6 d-flex">
-            <div class="input-group mb-3">
-                <input type="tel" class="form-control" placeholder="Buscar.."  aria-label="Buscar" aria-labelledby="button-addon2" />
-                <button class="btn btn-outline-primary">
-                    <i class="bi bi-search"></i>Buscar
-                </button>
+        <form asp-action="Index" method="get">
+            <div class="con-lg-6 col-md-6  col-sm-6 d-flex">
+                <div class="input-group mb-3">
+                    <!--Para enviar los datos del formulario deberemos de nombrar  el campo con el mismo nombre
+                        que definimos en en el metodo del controller 
+                    -->
+                    <input name="busqueda" value="@ViewData["BusquedaActual"]" type="tel" class="form-control" placeholder="Buscar.." aria-label="Buscar" aria-labelledby="button-addon2" />
+                    <button type="submit" class="btn btn-outline-primary">
+                        <i class="bi bi-search"></i>Buscar
+                    </button>
+                </div>
             </div>
+        </form>
 
         </div>
 
         <div class="row"> 
+            <!--Recibimos la lista del modelo y la iteramos con un For-->
             @foreach (var producto in Model)
             {
                 <div class="col-lg-3 col-md-3 col-sm-6 d-flex">
@@ -46,6 +53,30 @@
                 </div>
             }
         </div>
+        <!--Para pasarle un parametro a una acción debemos usar asp-route-[nombre identido del parametro en controller]-->
+        <a asp-action="Index" asp-route-pageNumber="@(1)" 
+            asp-route-busquedaActual="@ViewData["BusquedaActual"]"
+        class="btn btn-outline-primary">
+            <i class="bi bi-skip-start-circle"></i>
+        </a>
 
+        <!--Para acceder al los valores de ViewData usamos ViewData[NombreVariable en controller]-->
+        <a asp-action="Index" asp-route-pageNumber="@((int)ViewData["PageNumber"]-1)"
+           asp-route-busquedaActual="@ViewData["BusquedaActual"]" 
+           class="btn btn-outline-primary @ViewData["Previo"]">
+            Anterior
+        </a>
+        
+        <span>Pagina @ViewData["PageNumber"]  de @ViewData["TotalPaginas"]</span>
+        <a asp-action="Index" asp-route-pageNumber="@((int)ViewData["PageNumber"]+1)"
+            asp-route-busquedaActual="@ViewData["BusquedaActual"]"  
+            class="btn btn-outline-primary @ViewData["Siguiente"]">
+            Siguiente
+        </a>
+        <a asp-action="Index" asp-route-pageNumber="@(ViewData["TotalPaginas"])"
+           asp-route-busquedaActual="@ViewData["BusquedaActual"]"
+           class="btn btn-outline-primary">
+            <i class="bi bi-skip-end-circle"></i>
+        </a>
     </div>
 </section>
