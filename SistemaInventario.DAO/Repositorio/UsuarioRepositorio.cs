@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SistemaInventario.DAO.Repositorio
 {
-    internal class UsuarioRepositorio : Repositorio<Usuario>, IUsuarioRepositorio
+    public class UsuarioRepositorio : Repositorio<Usuario>, IUsuarioRepositorio
     {
         private readonly ApplicationDbContext _db;
 

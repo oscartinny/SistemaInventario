@@ -21,7 +21,7 @@ namespace SistemaInventario.Modelos
 
         [Required(ErrorMessage = "Dirección es requerido")]
         [MaxLength(200)]
-        public string Dirección { get; set; }
+        public string Direccion { get; set; }
 
         [Required(ErrorMessage = "Ciudad es requerido")]
         [MaxLength(60)]
@@ -29,7 +29,7 @@ namespace SistemaInventario.Modelos
 
         [Required(ErrorMessage = "País es requerido")]
         [MaxLength(60)]
-        public string País { get; set; }
+        public string Pais { get; set; }
 
         //Atributo para indicar que esta propiedad no se incluye como tabla en la BD
         [NotMapped]
