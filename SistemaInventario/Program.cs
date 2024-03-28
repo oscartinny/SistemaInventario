@@ -18,9 +18,28 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
  * Se deberá de cambiar por AddIdentity<IdentityUser, IdentityRole>
  */
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false)
+    .AddErrorDescriber<ErrorDescriber>()
     .AddDefaultTokenProviders()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+//Se crea la configuración de servicios para la parte del identity, para indicarle al programa
+//que es lo que requerirá para la generación de contraseñas de usuario
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    //Opcion para solicitar o no que la contraseña tenga un digito
+    options.Password.RequireDigit = false;
+    //Opcion para solicitar o no que la contraseña tenga una minuscula
+    options.Password.RequireLowercase = true;
+    //Opcion para solicitar o no que la contraseña tenga un caracter especial
+    options.Password.RequireNonAlphanumeric = false;
+    //Opcion para solicitar o no que la contraseña tenga una mayuscula
+    options.Password.RequireUppercase = false;
+    //Opcion para solicitar o no que la contraseña tenga un largo definido
+    options.Password.RequiredLength = 6;
+    //Opcion para permitir que se repita alguno de los carecteres
+    options.Password.RequiredUniqueChars = 1;
+});
 
 //AddScope permite una instacia de servicio que se crea una sola vez 
 //y puede seguirse usando las veces que sea necesaria.
@@ -64,3 +83,5 @@ app.MapControllerRoute(
 app.MapRazorPages();
 
 app.Run();
+/*Contraseña de admin; $O5c4r 
+  Contrseña bodega: $B0d3g4*/
