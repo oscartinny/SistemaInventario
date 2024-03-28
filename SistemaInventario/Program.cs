@@ -23,6 +23,18 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => options.Sign
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
+/**
+ * Agregamos el servicio que redirigira al usuario a las diferentes pantallas 
+ * AccessDeniedPath - Direcciona a una pagina si un usuario no tiene acceso a cierto modulo o ciertas acciones
+ * LoginPath - Direcciona a la pagina de login por default
+ */
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = $"/Identity/Account/Login";
+    options.LogoutPath = $"/Identity/Account/Logout";
+    options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
+});
+
 //Se crea la configuración de servicios para la parte del identity, para indicarle al programa
 //que es lo que requerirá para la generación de contraseñas de usuario
 builder.Services.Configure<IdentityOptions>(options =>
@@ -75,6 +87,8 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+ //SE DEBE DE AGREGAR LAS LINEAS DE AUTENTICACION Y AUTORIZACION PARA LOS USUARIOS Y SIEMPRE EN ESE ORDEN
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

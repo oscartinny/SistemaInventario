@@ -1,12 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.DAO.Data;
 using SistemaInventario.DAO.Repositorio.IRepositorio;
+using SistemaInventario.Utilidades;
 using System.Collections.Immutable;
 
 namespace SistemaInventario.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    //SE UTILIZA Authorize PARA OBLIGAR AL USUARIO A QUE SE LOGUEE PARA INGRESAR A ESTE CONTROLADOR
+    //ADICIONAL SE AGREGA EL TIPO DE ROL QUE TENDRÁ ACCESO AL MODULO
+    [Authorize(Roles = DS.Role_Admin)]
     public class UsuarioController : Controller
     {
 

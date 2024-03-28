@@ -104,13 +104,13 @@ namespace SistemaInventario.Areas.Identity.Pages.Account
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
 
-            public string PhoneNumber{ get; set; }
+            public string PhoneNumber { get; set; }
 
             [Required]
             public string Nombre { get; set; }
 
             [Required]
-            public string  Apellidos { get; set; }
+            public string Apellidos { get; set; }
 
             public string Direccion { get; set; }
 
@@ -120,7 +120,7 @@ namespace SistemaInventario.Areas.Identity.Pages.Account
 
             public string Role { get; set; }
 
-            public IEnumerable<SelectListItem> ListadoRol {  get; set; }
+            public IEnumerable<SelectListItem> ListadoRol { get; set; }
 
 
         }
@@ -223,7 +223,7 @@ namespace SistemaInventario.Areas.Identity.Pages.Account
 
                     //await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
                     //    $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
-                    
+
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
                         return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
@@ -245,11 +245,24 @@ namespace SistemaInventario.Areas.Identity.Pages.Account
                              * En caso contrario es un admin registrando un usuario, no se requiere volver a hacer el 
                              * sign in. Lo redireccionaremos a un controler
                              */
-                            return RedirectToAction("Index", "Usuario", new { Area = "Admin"});
+                            return RedirectToAction("Index", "Usuario", new { Area = "Admin" });
                         }
-                        
+
                     }
                 }
+                /**
+             * Obtenemos el listado de los roles que son diferentes a cliente, esto para que los clientes se puedan registrar
+             * solos
+             * */
+                Input = new InputModel()
+                {
+                    ListadoRol = _roleManager.Roles.Where(r => r.Name != DS.Role_Cliente).Select(n => n.Name).Select(l => new SelectListItem
+                    {
+                        Text = l,
+                        Value = l
+                    })
+                };
+
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.Operations;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using SistemaInventario.DAO.Migrations;
@@ -10,6 +11,9 @@ using SistemaInventario.Utilidades;
 namespace SistemaInventario.Areas.Admin.Controllers
 {
     [Area("Admin")]//CUANDO SE TRABAJEN CON AREAS SE DEBE REFERENCIAR A QUE CONTROLADOR PERTENECE CADA AREA
+    //SE UTILIZA Authorize PARA OBLIGAR AL USUARIO A QUE SE LOGUEE PARA INGRESAR A ESTE CONTROLADOR
+    //ADICIONAL SE AGREGA EL TIPO DE ROL QUE TENDRÁ ACCESO AL MODULO
+    [Authorize(Roles = DS.Role_Admin + "," + DS.Role_Inventario)]
     public class ProductoController : Controller
     {
         //Creamos una variable para nuestro servicio UnidadTrabajo
